@@ -6,7 +6,7 @@
 #    By: woopark <woopark@student.42.fr>            +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2021/05/04 17:49:18 by woopark           #+#    #+#              #
-#    Updated: 2021/05/31 13:32:14 by woopark          ###   ########.fr        #
+#    Updated: 2021/05/31 13:39:36 by woopark          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -62,13 +62,11 @@ FILES_B =	ft_lstnew \
 			ft_lstiter \
 			ft_lstmap
 
-SRCS_DIR = ./
-SRCS = $(addprefix $(SRCS_DIR), $(addsuffix .c, $(FILES)))
-SRCS_B = $(addprefix $(SRCS_DIR), $(addsuffix .c, $(FILES_B)))
+SRCS = $(addsuffix .c, $(FILES))
+SRCS_B = $(addsuffix .c, $(FILES_B))
 
-OBJS_DIR = ./
-OBJS = $(addprefix $(OBJS_DIR), $(addsuffix .o, $(FILES)))
-OBJS_B = $(addprefix $(OBJS_DIR), $(addsuffix .o, $(FILES_B)))
+OBJS = $(addsuffix .o, $(FILES))
+OBJS_B = $(addsuffix .o, $(FILES_B))
 
 
 .c.o: $(SRCS)
