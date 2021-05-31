@@ -6,32 +6,9 @@
 #    By: woopark <woopark@student.42.fr>            +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2021/05/04 17:49:18 by woopark           #+#    #+#              #
-#    Updated: 2021/05/21 13:33:46 by woopark          ###   ########.fr        #
+#    Updated: 2021/05/31 13:32:14 by woopark          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
-
-# CC = gcc
-# CCFLAGS = -Wall -Wextra -Werror
-# NAME = libft.a
-# # wildcard로 하면 안댐
-# SRCS = $(wildcard ./*.c)
-# OBJS = $(SRCS:.c=.o)
-
-# all: $(NAME)
-
-# %.o: %.c
-# 	$(CC) $(CFLAGS) -c $< -o $@ -I ./
-	
-# $(NAME): $(OBJS)
-# 	ar rc $@ $(OBJS)
-
-# clean:
-# 	rm -f $(OBJS)
-
-# fclean: clean
-# 	rm -f $(NAME)
-
-# re: fclean all
 
 NAME = libft.a
 
