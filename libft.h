@@ -6,18 +6,15 @@
 /*   By: woopark <woopark@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/05/04 18:10:58 by woopark           #+#    #+#             */
-/*   Updated: 2021/05/31 13:30:46 by woopark          ###   ########.fr       */
+/*   Updated: 2021/06/12 14:51:08 by woopark          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef LIBFT_H
 # define LIBFT_H
 
-# include <stdio.h>
-# include <string.h>
 # include <stddef.h>
 # include <stdlib.h>
-# include <ctype.h>
 # include <unistd.h>
 
 typedef struct		s_list
