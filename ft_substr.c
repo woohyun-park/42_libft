@@ -6,7 +6,7 @@
 /*   By: woopark <woopark@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/05/04 16:02:14 by woopark           #+#    #+#             */
-/*   Updated: 2021/06/11 15:14:05 by woopark          ###   ########.fr       */
+/*   Updated: 2021/06/12 09:44:54 by woopark          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,7 +25,7 @@ static int	ft_malloc_len(char const *s, unsigned int start, size_t len)
 			j++;
 		i++;
 	}
-	return (i);
+	return (j);
 }
 
 char		*ft_substr(char const *s, unsigned int start, size_t len)
