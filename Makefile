@@ -6,7 +6,7 @@
 #    By: woopark <woopark@student.42.fr>            +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2021/05/04 17:49:18 by woopark           #+#    #+#              #
-#    Updated: 2021/06/12 10:06:22 by woopark          ###   ########.fr        #
+#    Updated: 2021/06/12 14:57:42 by woopark          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -65,20 +65,14 @@ SRC_B =	ft_lstnew.c \
 OBJ_O = $(SRC_O:.c=.o)
 OBJ_B = $(SRC_B:.c=.o)
 
-ifdef WITH_BONUS
-	OBJ = $(OBJ_O) $(OBJ_B)
-else
-	OBJ = $(OBJ_O)
-endif
-
 .c.o: $(SRC)
 	$(CC) $(CFLAGS) -c -o $@ $<
 
-$(NAME): $(OBJ)
+$(NAME): $(OBJ_O)
 	$(AR) $@ $^
 
-bonus:
-	make WITH_BONUS=1 all
+bonus: $(OBJ_B)
+	$(AR) $(NAME) $^
 
 all: $(NAME)
 
